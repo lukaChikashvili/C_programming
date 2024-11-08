@@ -1,14 +1,16 @@
 #include <stdio.h>
+#include <ctype.h>
 
-int addNumbers(int number1, int number2) {
-   return number1 + number2;
-
-}
 
 int main() {
-   
-    int sum = addNumbers(2, 5);
-    printf("Result = %d", sum);
+    char alpha = 'a';
+    char upper = toupper(alpha);
+    printf("%c", upper);
+
+    char lower = tolower(upper);
+    printf("\n%c", lower);
+
+
     return 0;
 
 }
