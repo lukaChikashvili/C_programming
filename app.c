@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include <ctype.h>
+#include <string.h>
+
 
 
 int main() {
-    char alpha = 'a';
-    char upper = toupper(alpha);
-    printf("%c", upper);
+    
+    char language[] = "chinese";
 
-    char lower = tolower(upper);
-    printf("\n%c", lower);
+    printf("%zu", strlen(language));
 
 
     return 0;
